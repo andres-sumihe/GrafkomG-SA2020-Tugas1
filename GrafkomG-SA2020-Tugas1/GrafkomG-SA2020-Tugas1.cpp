@@ -231,6 +231,50 @@ void Rumah() {
 	glEnd();
 	//End 3D 
 
+	// PAGAR 
+	int lebar = 10;
+	float jarak = 10;
+	int banyak = 25;
+	for (int i = 1; i <= banyak; i++){
+		if (i % 2 == 1) {
+			glColor3ub(139, 69, 19);
+			glBegin(GL_POLYGON);
+			glVertex2f(i * jarak, 410);
+			glVertex2f((i * jarak) + lebar, 410);
+			glVertex2f((i * jarak) + lebar, 470);
+			glVertex2f(i * jarak, 470);
+			glEnd();
+		}else{
+			glColor3ub(255, 255, 255);
+			glBegin(GL_POLYGON);
+			glVertex2f(i * jarak, 410);
+			glVertex2f((i * jarak) + lebar, 410);
+			glVertex2f((i * jarak) + lebar, 470);
+			glVertex2f(i * jarak, 470);
+			glEnd();
+		}
+	}
+	for (int i = 1; i <= banyak; i++) {
+		if (i % 2 == 0) {
+			glColor3ub(139, 69, 19);
+			glBegin(GL_POLYGON);
+			glVertex2f(380 + (i * jarak), 410);
+			glVertex2f(380 + (i * jarak) + lebar, 410);
+			glVertex2f(380 + (i * jarak) + lebar, 470);
+			glVertex2f(380 + (i * jarak), 470);
+			glEnd();
+		}
+		else {
+			glColor3ub(255, 255, 255);
+			glBegin(GL_POLYGON);
+			glVertex2f(380 + (i * jarak), 410);
+			glVertex2f(380 + (i * jarak) + lebar, 410);
+			glVertex2f(380 + (i * jarak) + lebar, 470);
+			glVertex2f(380 + (i * jarak), 470);
+			glEnd();
+		}
+	}
+
 	glColor3ub(0, 0, 0);
 	glBegin(GL_LINES);
 	glVertex2f(320, 110);
