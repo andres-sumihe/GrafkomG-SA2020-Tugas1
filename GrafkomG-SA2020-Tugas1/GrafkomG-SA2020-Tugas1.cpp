@@ -133,55 +133,103 @@ void Rumah() {
 		
 	}
 
-	//Kursi
+	//Kursi 3D
 	glColor3ub(139, 69, 19);
 	glBegin(GL_POLYGON);
-	glVertex2f(110, 50);
-	glVertex2f(110, 85);
-	glVertex2f(115, 80);
-	glVertex2f(115, 45);
-	glEnd();
-	
-	glColor3ub(139, 69, 19);
-	glBegin(GL_POLYGON);
-	glVertex2f(77, 37);
-	glVertex2f(110, 50);
-	glVertex2f(115, 45);
-	glVertex2f(82, 32);
+	glVertex2f(110, 250);
+	glVertex2f(110, 285);
+	glVertex2f(115, 280);
+	glVertex2f(115, 245);
 	glEnd();
 	
 	glColor3ub(139, 69, 19);
 	glBegin(GL_POLYGON);
-	glVertex2f(77, 37);
-	glVertex2f(110, 50);
-	glVertex2f(110, 85);
-	glVertex2f(77, 71);
+	glVertex2f(77, 237);
+	glVertex2f(110, 250);
+	glVertex2f(115, 245);
+	glVertex2f(82, 232);
+	glEnd();
+	
+	glColor3ub(139, 69, 19);
+	glBegin(GL_POLYGON);
+	glVertex2f(77, 237);
+	glVertex2f(110, 250);
+	glVertex2f(110, 285);
+	glVertex2f(77, 271);
 	glEnd();
 	
 	glColor3ub(56, 129, 245);
 	glBegin(GL_POLYGON);
-	glVertex2f(45, 90);
-	glVertex2f(77, 104);
-	glVertex2f(110, 85);
-	glVertex2f(77, 71);
+	glVertex2f(45, 290);
+	glVertex2f(77, 304);
+	glVertex2f(110, 285);
+	glVertex2f(77, 271);
 	glEnd();
 	
 	glColor3ub(56, 129, 245);
 	glBegin(GL_POLYGON);
-	glVertex2f(45, 90);
-	glVertex2f(77, 104);
-	glVertex2f(77, 109);
-	glVertex2f(45, 95);
+	glVertex2f(45, 290);
+	glVertex2f(77, 304);
+	glVertex2f(77, 309);
+	glVertex2f(45, 295);
 	glEnd();
 	
 	glColor3ub(56, 129, 245);
 	glBegin(GL_POLYGON);
-	glVertex2f(77, 109);
-	glVertex2f(77, 104);
-	glVertex2f(115, 80);
-	glVertex2f(115, 85);
+	glVertex2f(77, 309);
+	glVertex2f(77, 304);
+	glVertex2f(115, 280);
+	glVertex2f(115, 285);
+	glEnd();
+
+	glColor3ub(139, 69, 19);
+	glBegin(GL_POLYGON);
+	glVertex2f(45, 295);
+	glVertex2f(50, 297);
+	glVertex2f(50, 330);
+	glVertex2f(45, 325);
+	glEnd();
+
+	glColor3ub(139, 69, 19);
+	glBegin(GL_POLYGON);
+	glVertex2f(50, 297);
+	glVertex2f(50, 330);
+	glVertex2f(55, 325);
+	glVertex2f(55, 299);
 	glEnd();
 	
+	glColor3ub(139, 69, 19);
+	glBegin(GL_POLYGON);
+	glVertex2f(77, 309);
+	glVertex2f(70, 306);
+	glVertex2f(70, 340);
+	glVertex2f(77, 344);
+	glEnd();
+	
+	glColor3ub(139, 69, 19);
+	glBegin(GL_POLYGON);
+	glVertex2f(77, 309);
+	glVertex2f(77, 344);
+	glVertex2f(81, 340);
+	glVertex2f(81, 306);
+	glEnd();
+
+	glColor3ub(139, 69, 19);
+	glBegin(GL_POLYGON);
+	glVertex2f(115, 285);
+	glVertex2f(115, 318);
+	glVertex2f(110, 323);
+	glVertex2f(110, 288);
+	glEnd();
+
+	glColor3ub(139, 69, 19);
+	glBegin(GL_POLYGON);
+	glVertex2f(110, 323);
+	glVertex2f(110, 288);
+	glVertex2f(105, 290);
+	glVertex2f(105, 319);
+	glEnd();
+	//End 3D 
 
 	glColor3ub(0, 0, 0);
 	glBegin(GL_LINES);
