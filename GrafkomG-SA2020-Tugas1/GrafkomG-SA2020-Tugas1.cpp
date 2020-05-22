@@ -333,6 +333,29 @@ void Rumah() {
 
 	//END GONG
 
+	//MJOLNIR Hammer
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(32, 30);
+	glVertex2f(30, 32);
+	glVertex2f(30, 37);
+	glVertex2f(32, 39);
+	glVertex2f(45, 39);
+	glVertex2f(47, 37);
+	glVertex2f(47, 32);
+	glVertex2f(45, 30);
+	glEnd();
+	
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(37, 39);
+	glVertex2f(40, 39);
+	glVertex2f(40, 55);
+	glVertex2f(37, 55);
+	glEnd();
+
+	//END MNJOLNIR
+
 	glColor3ub(0, 0, 0);
 	glBegin(GL_POLYGON);
 	glVertex2f(0 , 420);
