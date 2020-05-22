@@ -1,5 +1,6 @@
 #include <iostream>
 #include <GL/glut.h>
+//#include <GL/freeglut.h>
 
 void Rumah() {
 	glClearColor(255, 255, 255, 1);
@@ -67,10 +68,10 @@ void Rumah() {
 	glEnd();
 	//Akhir Cerobong
 	
+	//Pintu Geser
 	glColor3ub(139, 69, 19);
 	glBegin(GL_POLYGON);
 
-	//Pintu
 	glVertex2f(300, 260);
 	glVertex2f(300, 340);
 	glVertex2f(340, 340);
@@ -78,9 +79,9 @@ void Rumah() {
 
 	glEnd();
 
-	//Bagian_Pintu
+	//GAGANG PINTU SIDIK JARI HEHE
 	glColor3ub(0, 0, 0);
-	glPointSize(4);
+	glPointSize(3);
 	glBegin(GL_POINTS);
 
 	glVertex2f(338, 302);
@@ -289,6 +290,22 @@ void Rumah() {
 		}
 	}
 
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(0, 420);
+	glVertex2f(0, 430);
+	glVertex2f(260, 430);
+	glVertex2f(260, 420);
+	glEnd();
+
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(400, 420);
+	glVertex2f(400, 430);
+	glVertex2f(640, 430);
+	glVertex2f(640, 420);
+	glEnd();
+	//END PAGAR
 
 	//GONG
 	glColor3ub(0, 0, 0);
@@ -408,32 +425,9 @@ void Rumah() {
 
 
 	//END FLAG
-	glColor3ub(0, 0, 0);
-	glBegin(GL_POLYGON);
-	glVertex2f(0 , 420);
-	glVertex2f(0  , 430);
-	glVertex2f(260 , 430);
-	glVertex2f(260 , 420);
-	glEnd();
-
-	glColor3ub(0, 0, 0);
-	glBegin(GL_POLYGON);
-	glVertex2f(0, 420);
-	glVertex2f(0, 430);
-	glVertex2f(260, 430);
-	glVertex2f(260, 420);
-	glEnd();
-
 	
-	glColor3ub(0, 0, 0);
-	glBegin(GL_POLYGON);
-	glVertex2f(400 , 420);
-	glVertex2f(400 , 430);
-	glVertex2f(640 , 430);
-	glVertex2f(640 , 420);
-	glEnd();
 
-
+	// SALIB
 	glColor3ub(0, 0, 0);
 	glBegin(GL_LINES);
 	glVertex2f(320, 110);
@@ -445,7 +439,7 @@ void Rumah() {
 	glVertex2f(340, 125);
 	glEnd();
 
-
+	//END SALIB
 
 	glFlush();
 
@@ -454,16 +448,14 @@ void Rumah() {
 
 
 int main(int argc, char** argv) {
-	//Inisialisasi Program
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(640, 480);
-	glutCreateWindow("Rumah Dan Benda v1.0");
+	glutCreateWindow("Thor, New Asgard, Mnjolnir and the Mysterious Chair");
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA); 
 	glEnable(GL_BLEND); 
 	glClearColor(0.0, 0.0, 0.0, 0.0);
 	glutDisplayFunc(Rumah);
 	gluOrtho2D(0, 640, 480, 0);
-	//Selesai Inisialisasi
 	glutMainLoop();
 }
