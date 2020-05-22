@@ -336,26 +336,78 @@ void Rumah() {
 	//MJOLNIR Hammer
 	glColor3ub(0, 0, 0);
 	glBegin(GL_POLYGON);
-	glVertex2f(32, 30);
-	glVertex2f(30, 32);
-	glVertex2f(30, 37);
-	glVertex2f(32, 39);
-	glVertex2f(45, 39);
-	glVertex2f(47, 37);
-	glVertex2f(47, 32);
-	glVertex2f(45, 30);
+	glVertex2f(207, 375);
+	glVertex2f(205, 377);
+	glVertex2f(205, 382);
+	glVertex2f(207, 384);
+	glVertex2f(220, 384);
+	glVertex2f(222, 382);
+	glVertex2f(222, 377);
+	glVertex2f(220, 375);
 	glEnd();
 	
 	glColor3ub(0, 0, 0);
 	glBegin(GL_POLYGON);
-	glVertex2f(37, 39);
-	glVertex2f(40, 39);
-	glVertex2f(40, 55);
-	glVertex2f(37, 55);
+	glVertex2f(212, 384);
+	glVertex2f(215, 384);
+	glVertex2f(215, 400);
+	glVertex2f(212, 400);
 	glEnd();
 
 	//END MNJOLNIR
+	//FLAG
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(468, 384);
+	glVertex2f(452, 384);
+	glVertex2f(450, 400);
+	glVertex2f(470, 400);
+	glEnd();
 
+	glColor3ub(199, 197, 195);
+	glBegin(GL_POLYGON);
+	glVertex2f(458, 384);
+	glVertex2f(462, 384);
+	glVertex2f(462, 300);
+	glVertex2f(458, 300);
+	glEnd();
+
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(462, 303);
+	glVertex2f(498, 303);
+	glVertex2f(498, 313);
+	glVertex2f(462, 313);
+	glEnd();
+	
+	glColor3ub(255, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(462, 313);
+	glVertex2f(498, 313);
+	glVertex2f(498, 323);
+	glVertex2f(462, 323);
+	glEnd();
+	
+	glColor3ub(255, 255, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(462, 323);
+	glVertex2f(498, 323);
+	glVertex2f(498, 333);
+	glVertex2f(462, 333);
+	glEnd();
+	
+	glColor3ub(181, 180, 176);
+	glPointSize(6);
+	glBegin(GL_POINTS);
+
+	glVertex2f(460, 300);
+
+	glEnd();
+	
+	//lebar tiang  = 4
+
+
+	//END FLAG
 	glColor3ub(0, 0, 0);
 	glBegin(GL_POLYGON);
 	glVertex2f(0 , 420);
@@ -398,6 +450,7 @@ void Rumah() {
 	glFlush();
 
 }
+
 
 
 int main(int argc, char** argv) {
