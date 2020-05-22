@@ -14,6 +14,20 @@ void Rumah() {
 	glVertex2f(420, 220);
 
 	glEnd();
+	
+	//halaman
+	glColor3ub(70, 219, 110);
+	glBegin(GL_POLYGON);
+
+	glVertex2f(420, 340);
+	glVertex2f(220, 340);
+	glVertex2f(1, 480);
+	glVertex2f(640,480 );
+
+	glEnd();
+
+
+
 
 	glColor3ub(139, 69, 19);
 	glBegin(GL_POLYGON);
@@ -245,7 +259,7 @@ void Rumah() {
 			glVertex2f(i * jarak, 470);
 			glEnd();
 		}else{
-			glColor3ub(255, 255, 255);
+			glColor4ub(255, 255, 255, 0);
 			glBegin(GL_POLYGON);
 			glVertex2f(i * jarak, 410);
 			glVertex2f((i * jarak) + lebar, 410);
@@ -265,7 +279,7 @@ void Rumah() {
 			glEnd();
 		}
 		else {
-			glColor3ub(255, 255, 255);
+			glColor4ub(255, 255, 255, 0);
 			glBegin(GL_POLYGON);
 			glVertex2f(380 + (i * jarak), 410);
 			glVertex2f(380 + (i * jarak) + lebar, 410);
@@ -274,6 +288,86 @@ void Rumah() {
 			glEnd();
 		}
 	}
+
+
+	//GONG
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(90 , 80);
+	glVertex2f(80 , 80);
+	glVertex2f(80 , 10);
+	//glVertex2f(160 , 10);
+	//glVertex2f(160 , 80);
+	//glVertex2f(150 , 80);
+	//glVertex2f(150 , 20);
+	glVertex2f(90 , 20);
+	glEnd();
+
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(90, 20);
+	glVertex2f(80, 10);
+	glVertex2f(160 , 10);
+	//glVertex2f(160 , 80);
+	//glVertex2f(150 , 80);
+	glVertex2f(150 , 20);
+	glEnd();
+
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(160, 10);
+	glVertex2f(150, 20);
+	glVertex2f(150, 80);
+	glVertex2f(160, 80);
+	//glVertex2f(160 , 80);
+	//glVertex2f(150 , 80);
+	glEnd();
+	glColor3ub(171, 94, 0);
+	glBegin(GL_LINES);
+	glVertex2f(120, 20);
+	glVertex2f(120, 50);
+	glEnd();
+	glColor3ub(230, 192, 25);
+	glBegin(GL_POLYGON);
+	glVertex2f(117.5, 50);
+	glVertex2f(122.5, 50);
+	glVertex2f(125.5, 55);
+	glVertex2f(125.5, 60);
+	glVertex2f(122.5, 65);
+	glVertex2f(117.5, 65);
+	glVertex2f(115, 60);
+	glVertex2f(115, 55);
+	//glVertex2f(160 , 80);
+	//glVertex2f(150 , 80);
+	glEnd();
+
+	//END GONG
+
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(0 , 420);
+	glVertex2f(0  , 430);
+	glVertex2f(260 , 430);
+	glVertex2f(260 , 420);
+	glEnd();
+
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(0, 420);
+	glVertex2f(0, 430);
+	glVertex2f(260, 430);
+	glVertex2f(260, 420);
+	glEnd();
+
+	
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex2f(400 , 420);
+	glVertex2f(400 , 430);
+	glVertex2f(640 , 430);
+	glVertex2f(640 , 420);
+	glEnd();
+
 
 	glColor3ub(0, 0, 0);
 	glBegin(GL_LINES);
@@ -299,6 +393,9 @@ int main(int argc, char** argv) {
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(640, 480);
 	glutCreateWindow("Rumah Dan Benda v1.0");
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA); 
+	glEnable(GL_BLEND); 
+	glClearColor(0.0, 0.0, 0.0, 0.0);
 	glutDisplayFunc(Rumah);
 	gluOrtho2D(0, 640, 480, 0);
 	//Selesai Inisialisasi
